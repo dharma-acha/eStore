@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Layout Specification</title>
+    <style> 
+    body {
+        width: 1000pt;
+	height: 2000px;
+        font-family: Calibri;
+    }
+    
+    header ul li {
+        list-style-type: none;
+    }
+    
+    header ul li a {
+        text-decoration: none;
+    }
+    
+    .header1 {
+        background-color: #333333;
+        display: flex;
+    }
+    
+    .menu {
+        font-size: 48pt;
+        color: #fff;
+        font-weight: normal;
+        padding-left: 80pt;
+        box-sizing: border-box;
+        margin: 0pt;
+        flex: 1;
+    }
+    
+    .main {
+        color: #fff;
+        flex: 1;
+        margin: auto;
+    }
+    
+    .main ul{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 70pt;
+    }
+    
+    .main a {
+        font-size: 16pt;
+        color: #fff;
+    }
+    
+    .header2 {
+        background-color: #fff;
+        display: flex;
+    }
+        
+    .category {
+        flex: 4;
+        margin: auto;
+    }
+    
+    .search {
+        flex: 1;
+        margin: 10pt 70pt;
+        font-family: Calibri;
+        width: 70pt;
+        height: 35pt;
+        border-style: solid;
+        padding-left: 15pt;
+        box-sizing: border-box;
+    }
+    
+    .category ul {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 80pt;
+        box-sizing: border-box;
+    }
+    
+    .category a {
+        font-size: 16pt;
+        color: #333333;
+    }
+    
+    .column3Layout {
+        background-color: #EDEDEF;
+        display: flex;
+        padding: 20pt 60pt;
+        box-sizing: border-box;
+    }
+    
+    .maskImage {
+        flex: 2;
+        margin: auto;
+    }
+    
+    .title{
+        flex: 5;
+        margin: auto;
+        font-size: 58pt;
+        color: #333333;
+        font-weight: normal;
+        padding-left: 35pt;
+        box-sizing: border-box;
+    }
+    
+    .information {
+        flex: 5;
+        margin: auto;
+        font-size: 18pt;
+        color: #333333;
+    }
+    
+    .insideContainer {
+        padding: 0pt 75pt;
+        box-sizing: border-box;
+    }
+    
+    .headings {
+        font-size: 30pt;
+        color: #333333;
+        font-weight: normal;
+    }
+    
+    .headings p{
+        margin: 10pt 0pt;
+    }
+    
+    .firstL {
+        font-size: 45pt;
+        font-weight: 450;
+    }
+    
+    .figure-Layout {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .figure-Layout figure {
+        flex: 1;
+        margin: 10pt 15pt;
+    }
+    
+    .figure-Layout img {
+        width: 110pt;
+        height: 115pt;
+    }
+    
+    .figure-Layout figcaption {
+        font-size: 12pt;
+        text-align: center;
+        margin: 5pt 5pt;
+    }
+    
+    .fig-cat-Layout {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .fig-cat-Layout figure {
+        flex: 1;
+        background-color: #dbf3fa;
+        padding: 3.5pt;
+        margin: auto;
+        margin-bottom: 30pt;
+    }
+    
+    .fig-cat-Layout img {
+        width: 140pt;
+        height: 150pt;
+    }
+    
+    .fig-cat-Layout figcaption {
+        font-size: 20pt;
+        color: #333333;
+        text-align: center;
+    }
+    
+    .brand {
+        color: #333333;
+        font-size: 14pt;
+        line-height: 2;
+        margin-bottom: 30pt;
+    }
+    
+    .footer {
+        background-color: #131a22;
+        display: flex;
+        justify-content: space-between;
+        padding: 10pt 200pt 150pt 75pt;
+        box-sizing: border-box;
+    }
+    
+    .column {
+        color: #fff;
+        font-size: 16pt;
+        line-height: .8;
+    }
+    
+    .columnheader {
+        font-size: 18pt;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <section class="header1">
+            <h1 class="menu">eStore</h1>
+            <nav class="main">
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Wish List</a></li>
+                    <li><a href="#">Shopping</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Checkout</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="header2">
+            <nav class="category">
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Protective Wear</a></li>
+                    <li><a href="#">Footwear</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Friday Casual</a></li>
+                </ul>
+            </nav>
+            <label for="searchBox"></label>
+            <input type="search" id="searchBox" class="search" placeholder="Search for Products & Brands">
+        </section>
+    </header>
+    <section class="column3Layout">
+        <div class="maskImage">        
+            <img src="mask.jpg" alt="mask">
+        </div>
+        <div class="title">        
+            <p>STAY HOME, STAY SAFE.</p>
+        </div>
+        <div class="information">
+            <p>Contactless Deliveries</p>
+            <p>All delivery staff trained in COVID-19 preventive measures</p>
+            <p>All Delivery and warehouse staff are equipped with medical-grade hand Santizers</p>
+            <p>All warehouses staff undergo daily mandatory thermal temperature scanning</p>
+            <p>No deliveries in &lsquo;highly affected&rsquo; areas</p>
+        </div>
+    
+    </section>
+    <div class="insideContainer">
+        <section class="dealsSections">
+            
+            <div class="headings">        
+                <p><span class="firstL">D</span>eals of the day</p>
+            </div>
+            
+            <div class="figure-Layout">
+            
+                <div class="figure-Image">
+                    <figure>
+                        <img src="placeholder.png">
+                        <figcaption class="figure-Caption">Sports & Fitness Gear Upto 80% Off</figcaption>
+                    </figure>
+                </div>
+                <div class="figure-Image">
+                    <figure>
+                        <img src="placeholder.png">
+                        <figcaption class="figure-Caption">Branded Jeans Upto 50% Off</figcaption>
+                    </figure>
+                </div>
+                <div class="figure-Image">
+                    <figure>
+                        <img src="placeholder.png">
+                        <figcaption class="figure-Caption">Branded T-Shirts Upto 60% Off</figcaption>
+                    </figure>
+                </div>
+                <div class="figure-Image">
+                    <figure>
+                        <img src="placeholder.png">
+                        <figcaption class="figure-Caption">Sports & Fitness Gear Upto 50% Off</figcaption>
+                    </figure>
+                </div>
+                <div class="figure-Image">
+                    <figure>
+                        <img src="placeholder.png">
+                        <figcaption class="figure-Caption">Branded Kids T-Shirts Upto 40% Off</figcaption>
+                    </figure>
+                </div>
+                <div class="figure-Image">
+                    <figure>
+                        <img src="placeholder.png">
+                        <figcaption class="figure-Caption">Sports Girls T-Shirts Upto 50% Off</figcaption>
+                    </figure>
+                </div>
+            </div>
+    
+        </section>
+        <section class="fashionCategories">
+            <div class="headings">
+                <p><span class="firstL">F</span>ashion Categories</p>
+            </div>
+            <div class="fig-cat-Layout">
+                <div class="fig-cat-Image">
+                    <figure>
+                        <img src="placeholder.png">
+                        <figcaption class="fig-cat-Caption">Kurtas</figcaption>
+                    </figure>
+                </div>
+                <div class="fig-cat-Image">
+                    <figure>
+                        <img src="placeholder.png">
+                        <figcaption class="fig-cat-Caption">Shirts</figcaption>
+                    </figure>
+                </div>
+                <div class="fig-cat-Image">
+                    <figure>
+                        <img src="placeholder.png">
+                        <figcaption class="fig-cat-Caption">Pants</figcaption>
+                    </figure>
+                </div>
+                <div class="fig-cat-Image">
+                    <figure>
+                        <img src="placeholder.png">
+                        <figcaption class="fig-cat-Caption">TShirts</figcaption>
+                    </figure>
+                </div>
+            </div>
+    
+            <div class="fig-cat-Layout">
+                <div class="fig-cat-Image">
+                    <figure>
+                        <img src="placeholder.png">
+                        <figcaption class="fig-cat-Caption">Shoes</figcaption>
+                    </figure>
+                </div>
+                <div class="fig-cat-Image">
+                    <figure>
+                        <img src="placeholder.png">
+                        <figcaption class="fig-cat-Caption">Casual Shirts</figcaption>
+                    </figure>
+                </div>
+                <div class="fig-cat-Image">
+                    <figure>
+                        <img src="placeholder.png">
+                        <figcaption class="vCaption">JEANS</figcaption>
+                    </figure>
+                </div>
+                <div class="fig-cat-Image">
+                    <figure>
+                        <img src="placeholder.png">
+                        <figcaption class="fig-cat-Caption">Tops</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    
+        <section class="brand">
+            <p>Adidas | Arrow | Fila | Online Shopping | Nike | Pepe Jeans | Puma | United colors of Benetton | Fastrack | Shorts | Being Human | Skirts | Woodland | 
+                Supra Dresses Clothing | Jewellery | T-shirts | Shoes | Bags | Watches | Caps | Shirts | Backpacks | Flip Flops | Sunglasses | Kurtas | Jackets | Skechers 
+                | Saree | Sandals | Puma Tshirts | Woodland Shoes | Titan Watches | Fastrack Watches | Wrangler Shirts | Adidas Tshirts | Nike Shoes | Roadster Shirts | 
+                Casual Shoes | Running Shoes | Nike Sports Shoes | Jeans | Being Human | Tshirts | Converse Shoes | Cricket Shoes</p>
+        </section>
+    
+    </div>
+    
+    <footer>
+        <section class="footer">
+            <div class="column">
+                <p class="columnheader">MY ACCOUNT</p>
+                <p>Orders</p>
+                <p>Returns/Refunds</p>
+                <p>Track Order</p>
+                <p>Frequently Asked Questions</p>
+            </div>
+
+            <div class="column">
+                <p class="columnheader">POLICIES</p>
+                <p>Payment Options</p>
+                <p>Terms & Condditions of Use</p>
+                <p>Terms & Conditions of Membership Porgram</p>
+                <p>Offer Terms & Conditions</p>
+                <p>Returns & Exchange Policy</p>
+                <p>Shipping Policy</p>
+                <p>Privacy Policy</p>
+                <p>Safety Checklist</p>
+            </div>
+            
+            <div class="column">
+                <div class="innercolumn">
+                <p class="columnheader">CONTACT US</p>
+                <p>Customer Support</p>
+                <p>Store Locators</p>
+                <p>Help Center</p>
+                </div>
+                
+
+                <div class="innerContent">
+                    <p class="columnheader">ABOUT US</p>
+                    <p>Official Brand Store</p>
+                    <p>About Us</p>
+                    <p>Careers</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <p class="columnheader">SOCIAL</p>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Youtube</p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
